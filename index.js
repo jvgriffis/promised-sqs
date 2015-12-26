@@ -3,7 +3,7 @@ var AWS = require('aws-sdk');
 
 //we have a list because amazon doesn't
 var calls = ['addPermission','changeMessageVisibility'
-  ,'changeMessageVisibilityBatch','createQue','deleteMessage'
+  ,'changeMessageVisibilityBatch','createQueue','deleteMessage'
   ,'deleteMessageBatch','deleteQueue','getQueueAttributes'
   ,'getQueueUrl','listDeadLetterSourceQueues','listQueues'
   ,'purgeQueues','receiveMessage','removePermission'
