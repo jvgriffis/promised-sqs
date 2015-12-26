@@ -1,5 +1,5 @@
-
-var AWS = require('aws-sdk')
+var Promise = require('promise');
+var AWS = require('aws-sdk');
 
 //we have a list because amazon doesn't
 var calls = ['addPermission','changeMessageVisibility'
@@ -7,7 +7,7 @@ var calls = ['addPermission','changeMessageVisibility'
   ,'deleteMessageBatch','deleteQueue','getQueueAttributes'
   ,'getQueueUrl','listDeadLetterSourceQueues','listQueues'
   ,'purgeQueues','receiveMessage','removePermission'
-  ,'sendMessage','sendMessageBatch','setQueueAttributes']
+  ,'sendMessage','sendMessageBatch','setQueueAttributes'];
 
 module.exports = function(qUrl, awsConfig){
   if(typeof qUrl === 'object'){
